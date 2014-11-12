@@ -10,10 +10,7 @@
 #'
 #' @return Vector of genes in the bicluster
 #'
-#' @examples 
-#' getGenes( db_path = "/path/to/database", bicluster = 10)
-#' getGenes( db_path = "/path/to/database", bicluster = 100, iteration = 1002)
-#' 
+#'  @export
 getGenes <- function( db_path = "", bicluster = 1, iteration = "max" ) {
 	if ( is.character( db_path ) ) {
 		db_path <- load_cMonkey( db_path, verbose = F )
