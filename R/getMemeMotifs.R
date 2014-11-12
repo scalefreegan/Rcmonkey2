@@ -12,11 +12,6 @@
 #'
 #' @return data.frame containing information about the locations and properties of discovered motifs by MEME
 #'
-#' @examples 
-#' getMemeMotifs( db_path = "/path/to/database", bicluster = 10)
-#' getMemeMotifs( db_path = "/path/to/database", bicluster = 100, iteration = 1002)
-#' getMemeMotifs( db_path = "/path/to/database", bicluster = 100, iteration = 1002, motif_num = 2)
-#' 
 #'  @export
 getMemeMotifs <- function( db_path = "", bicluster = 1, iteration = "max", motif_num = seq( 1, 10 ) ) {
 	if ( is.character( db_path ) ) {

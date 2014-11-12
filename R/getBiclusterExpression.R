@@ -10,9 +10,6 @@
 #' @param ratios Path to tab-delimited file or variable containing gene expression data
 #'
 #' @return Matrix containing gene expression values for each gene and condition in the bicluster
-#' @examples 
-#' getBiclusterExpression( db_path = "/path/to/database", bicluster = 10, ratios = "/path/to/expression/data" )
-#' getBiclusterExpression( db_path = "/path/to/database", bicluster = 100, iteration = 1002, ratios = expression_data_var )
 #' 
 #'  @export
 getBiclusterExpression <- function( db_path = "", bicluster = 1, iteration = "max", ratios = "" ) {

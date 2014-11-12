@@ -8,9 +8,6 @@
 #'
 #' @return Connection to SQLite database
 #'
-#' @examples 
-#' dbconn <- load_cMonkey("path/to/your/database")
-#' 
 #'  @export
 load_cMonkey <- function( path = "", verbose = T) {
 	library( "RSQLite" )

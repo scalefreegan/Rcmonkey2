@@ -11,11 +11,7 @@
 #' (assuming # motifs per bicluster < 10) 
 #'
 #' @return List containing $pwm and $evalue for each motif requested
-#' @examples 
-#' getMotifPWM( db_path = "/path/to/database", bicluster = 10)
-#' getMotifPWM( db_path = "/path/to/database", bicluster = 100, iteration = 1002)
-#' getMotifPWM( db_path = "/path/to/database", bicluster = 100, iteration = 1002, motif_num = 2)
-#' 
+#'
 #'  @export
 getMotifPWM <- function( db_path = "", bicluster = 1, iteration = "max", motif_num = seq( 1, 10 ) ) {
 	if ( is.character( db_path ) ) {

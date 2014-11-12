@@ -9,10 +9,6 @@
 #' @param iteration Iteration of bicluster to retrieve, defaults to last (final) iteration 
 #'
 #' @return Vector of conditions in the bicluster
-#'
-#' @examples 
-#' getConditions( db_path = "/path/to/database", bicluster = 10)
-#' getConditions( db_path = "/path/to/database", bicluster = 100, iteration = 1002)
 #' 
 #'  @export
 getConditions <- function( db_path = "", bicluster = 1, iteration = "max" ) {

@@ -7,12 +7,6 @@
 #'
 #' @return Plot of the motif
 #'
-#' @examples 
-#' mFile <- system.file("Exfiles/pwm1", package="seqLogo")
-#' m <- read.table(mFile)
-#' p <- makePWM(m)
-#  seqLogo(p, ic.scale=FALSE)
-#' 
 #'  @export
 plotMotif <- function( pwm = NULL, db_path = "", bicluster = 1, iteration = "max", 
 	motif_num = 1, ic.scale = TRUE, file = NULL) {
