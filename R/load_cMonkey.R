@@ -1,16 +1,17 @@
 #' Load cMonkey database.
 #'
-#' code{load_cMonkey} Loads the SQLite databases produced from a
+#' \code{load_cMonkey} Loads the SQLite databases produced from a
 #' cMonkey2 (aka python cMonkey) run
 #'
 #' @param path Location of the SQLite database
 #' @param verbose Should location of database be written to console
 #'
-#' @return Connection to specified SQLite database
+#' @return Connection to SQLite database
 #'
 #' @examples 
 #' dbconn <- load_cMonkey("path/to/your/database")
 #' 
+#'  @export
 load_cMonkey <- function( path = "", verbose = T) {
 	library( "RSQLite" )
 	# assumes the you are in the standard
