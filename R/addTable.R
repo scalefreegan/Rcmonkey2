@@ -26,7 +26,7 @@ addTable <- function( db_path = "", table_name = "", tab_file = "" ) {
 			*table_name* parameter\n")
 		return(NULL)
 	} else {
-		dbconn <- dbConnect( SQLite( ), db )
+		dbconn <- dbConnect( SQLite( ), db_path )
 		m_table <- read.delim(tab_file,sep="\t")
 		dbWriteTable(dbconn, name = table_name, value = m_table)
 	}
