@@ -9,8 +9,6 @@
 #' @param tab_file Tab-delimited file to add to database
 #'
 #' @return NULL (modified SQLite database)
-#'
-#' @examples 
 #' 
 #'  @export
 addTable <- function( db_path = "", table_name = "", tab_file = "" ) {
