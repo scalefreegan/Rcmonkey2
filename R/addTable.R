@@ -16,7 +16,7 @@
 #'  @export
 addTable <- function( db_path = "", table_name = "", tab_file = "" ) {
 	library( "RSQLite" )
-	if (db == "" || tab_file == "" || table_name == "") {
+	if (db_path == "" || tab_file == "" || table_name == "") {
 		cat("You need to specific an existing database with 
 			*db* parameter 
 			and 
