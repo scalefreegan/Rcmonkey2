@@ -11,7 +11,6 @@
 #' @return NULL (modified SQLite database)
 #'
 #' @examples 
-#' addTable( db_path = "/path/to/db", table_name = "my_new_table", tab_file = "path/to/tab/delim/file" )
 #' 
 #'  @export
 addTable <- function( db_path = "", table_name = "", tab_file = "" ) {
