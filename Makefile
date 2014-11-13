@@ -4,7 +4,7 @@ all: rmobj doc
 # build package documentation
 doc:
 	R -e 'library(devtools);document()'
-
+	R CMD Rd2pdf --force --output=./Rcmonkey2_man.pdf --no-preview  .
 # remove .o and .so files
 #rmobj:
 #	touch src/avoid_no_such_file_or_directory.o

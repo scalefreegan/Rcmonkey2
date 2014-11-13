@@ -2,3 +2,5 @@
 $README.md
 \.gitignore
 Makefile
+Rcmonkey2_man.pdf
+\.Rprofile

@@ -2,6 +2,8 @@ Package: Rcmonkey2
 Title: R interface to cMonkey2 (aka cmonkey-python)
 Version: 0.1
 Authors@R: "Aaron Brooks <aaron.brooks@systems.biology.org> [aut, cre]"
+Author: Aaron Brooks
+Maintainer: Aaron Brooks <aaron.brooks@systems.biology.org>
 Description: R package containing scripts and wrappers to interface with SQLite
     db returned by cMonkey2
 Depends:
