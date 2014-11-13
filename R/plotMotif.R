@@ -20,8 +20,8 @@ plotMotif <- function( pwm = NULL, db_path = "", bicluster = 1, iteration = "max
 	if ( pwm == NULL ) {
 		pwm_o <- getMotifPWM( db_path = db_path, bicluster = bicluster, 
 			iteration = iteration, motif_num = motif_num )
-		pwm <- pwm_o[ [ 1 ] ]$pwm
-		eval <- pwm_o[ [ 1 ] ]$eval
+		pwm <- pwm_o[[1]]$pwm
+		eval <- pwm_o[[1]]$eval
 	}
 	p <- makePWM( pwm, ic.scale = ic.scale )
 	if ( !is.null( file ) ) {
