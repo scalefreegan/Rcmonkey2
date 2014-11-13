@@ -1,12 +1,14 @@
 Package: Rcmonkey2
 Title: R interface to cMonkey2 (aka cmonkey-python)
-Version: 0.1
+Version: 1.0.0
 Authors@R: "Aaron Brooks <aaron.brooks@systems.biology.org> [aut, cre]"
 Author: Aaron Brooks
 Maintainer: Aaron Brooks <aaron.brooks@systems.biology.org>
 Description: R package containing scripts and wrappers to interface with SQLite
-    db returned by cMonkey2
+    database returned by cMonkey2
 Depends:
-    R (>= 3.1.1)
+    R (>= 3.1.1),
+    RSQLite (>= 1.0.0),
+    seqLogo (>= 1.10.0)
 License: MIT + file LICENSE
 LazyData: true
