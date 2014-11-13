@@ -30,10 +30,17 @@ getMotifPWM <- function( db_path = "", bicluster = 1, iteration = "max", motif_n
 		WHERE motif_infos.iteration = ", iteration,
 		" AND motif_infos.cluster = ", bicluster, 
 		" AND motif_infos.motif_num IN ", motif_num, ";", sep="" ) )
-	row_order <- order(to_r$row)
-	pssm <- cbind(to_r$a,to_r$c,to_r$g,to_r$t)[row_order,]
-	colnames(pssm) <- c("A","C","G","T")
-	pssm <- t(pssm)
+	to_r_r <- lapply( unique( to_r$motif_num ), function( i ) {
+		sub_m <- to_r[ to_r$motif_num == i, ]
+		motif_sub <- list( )
+		row_order <- order( to_r$row )
+		pwm <- cbind( to_r$a, to_r$c, to_r$g, to_r$t )[ row_order, ]
+		colnames(pwm) <- c( "A", "C", "G", "T" )
+		motif_sub$pwm <- t( pwm )
+		motif_sub$eval <- unique( sub_m$evalue )
+		return( motif_sub )
+		})
+	names( to_r_r ) <- unique( to_r$motif_num )
 	dbDisconnect( db_path )
 	return(to_r)
 }
