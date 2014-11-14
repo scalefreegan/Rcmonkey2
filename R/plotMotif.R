@@ -8,7 +8,7 @@
 #'  A \tab 0 \tab 0 \tab 0.23 \tab 0 \tab 1 \tab 0.77 \tab 0.56 \tab 1\cr
 #'  C \tab 0 \tab 0 \tab 0 \tab 0 \tab 0 \tab 0 \tab 0.44 \tab 0\cr
 #'  G \tab 1 \tab 1 \tab 0.77 \tab 0.11 \tab 0 \tab 0.23 \tab 0 \tab 0\cr
-#'  T \tab 0 \tab 0 \tab 0 \tab 0.89 \tab 0 \tab 0 \tab 0 \tab 0
+#'  T \tab 0 \tab 0 \tab 0 \tab 0.89 \tab 0 \tab 0 \tab 0 \tab 0\cr
 #' }
 #' @param db_path Location of the SQLite database
 #' @param bicluster Bicluster number, integer
