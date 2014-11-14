@@ -22,8 +22,8 @@ getMotifPWM <- function( db_path = "", bicluster = 1, iteration = "max", motif_n
 	}
 	motif_num = paste( "(", paste( motif_num, collapse = "," ), ")", sep = "")
 	to_r <- dbGetQuery( db_path, paste(
-		"SELECT motif_pssm_rows.row, motif_pssm_rows.a, motif_pssm_rows.c,
-		motif_pssm_rows.g, motif_pssm_rows.t, motif_infos.motif_num, motif_infos.evalue
+		"SELECT motif_pssm_rows.row, motif_pssm_rows.a*1.0 as a, motif_pssm_rows.c*1.0 as c,
+		motif_pssm_rows.g*1.0 as g, motif_pssm_rows.t*1.0 as t, motif_infos.motif_num, motif_infos.evalue
 		FROM motif_pssm_rows 
 		JOIN motif_infos 
 		ON motif_pssm_rows.motif_info_id = motif_infos.ROWID
@@ -42,5 +42,5 @@ getMotifPWM <- function( db_path = "", bicluster = 1, iteration = "max", motif_n
 		})
 	names( to_r_r ) <- unique( to_r$motif_num )
 	dbDisconnect( db_path )
-	return(to_r)
+	return(to_r_r)
 }
