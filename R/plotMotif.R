@@ -4,7 +4,7 @@
 #'
 #' @param pwm A PWM of the form:
 #'  \tabular{rrrrrrrrr}{
-#'  - \tab 1 \tab 2 \tab 3 \tab 4 \tab 5 \tab 6 \tab 7 \tab 8
+#'  - \tab 1 \tab 2 \tab 3 \tab 4 \tab 5 \tab 6 \tab 7 \tab 8\cr
 #'  A \tab 0 \tab 0 \tab 0.222222 \tab 0.000000 \tab 1 \tab 0.777778 \tab 0.555556 \tab 1\cr
 #'  C \tab 0 \tab 0 \tab 0.000000 \tab 0.000000 \tab 0 \tab 0.000000 \tab 0.444444 \tab 0\cr
 #'  G \tab 1 \tab 1 \tab 0.777778 \tab 0.111111 \tab 0 \tab 0.222222 \tab 0.000000 \tab 0\cr
