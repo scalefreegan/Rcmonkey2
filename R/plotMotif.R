@@ -1,19 +1,21 @@
-#' Plot cMonkey PSSM using seqLogo.
+#' Plot cMonkey PWM using seqLogo.
 #'
 #' \code{plotMotif} plots a PWM
 #'
 #' @param pwm A PWM of the form:
 #'  \tabular{rrrrrrrrr}{
-#'  - \tab 1 \tab 2 \tab 3 \tab 4 \tab 5 \tab 6 \tab 7 \tab 8\cr
-#'  A \tab 0 \tab 0 \tab 0.222222 \tab 0.000000 \tab 1 \tab 0.777778 \tab 0.555556 \tab 1\cr
-#'  C \tab 0 \tab 0 \tab 0.000000 \tab 0.000000 \tab 0 \tab 0.000000 \tab 0.444444 \tab 0\cr
-#'  G \tab 1 \tab 1 \tab 0.777778 \tab 0.111111 \tab 0 \tab 0.222222 \tab 0.000000 \tab 0\cr
-#'  T \tab 0 \tab 0 \tab 0.000000 \tab 0.888889 \tab 0 \tab 0.000000 \tab 0.000000 \tab 0
+#'   \tab 1 \tab 2 \tab 3 \tab 4 \tab 5 \tab 6 \tab 7 \tab 8\cr
+#'  A \tab 0 \tab 0 \tab 0.23 \tab 0 \tab 1 \tab 0.77 \tab 0.56 \tab 1\cr
+#'  C \tab 0 \tab 0 \tab 0 \tab 0 \tab 0 \tab 0 \tab 0.44 \tab 0\cr
+#'  G \tab 1 \tab 1 \tab 0.77 \tab 0.11 \tab 0 \tab 0.23 \tab 0 \tab 0\cr
+#'  T \tab 0 \tab 0 \tab 0 \tab 0.89 \tab 0 \tab 0 \tab 0 \tab 0
 #' }
 #' @param db_path Location of the SQLite database
 #' @param bicluster Bicluster number, integer
 #' @param iteration Iteration of bicluster to retrieve, defaults to last (final) iteration 
-#' @param motif_num Number of the motif to return. Defaults to all motifs 
+#' @param motif_num Number of the motif to plot 
+#' @param ic.scale Scale by information content
+#' @param file Path to save pdf to file
 #'
 #' @return Plot of the motif
 #'
